@@ -25,7 +25,7 @@ def shift(img,sx,sy):
     return shifted
 
 def process_image(image_path, filename, output_directory):
-	# Read image as grayscale
+        # Read image as grayscale
 	gray_image = cv2.imread(image_path + filename, 0)
 
 	# Invert image (black background) and set size to 28, 28
