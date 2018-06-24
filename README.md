@@ -2,9 +2,6 @@
 
 #### Image Number Detector is a web-application that uses a convolutional neural network to detect numbers drawn by the users.
 
-##### The project should be live within a month, a link will be added here.
-##### The current MNIST testing accuracy is 97.26%, but a better trained model will soon be updated and the expected accuracy is over 99%.
-
 ## Front-end
 
 * Implementation: Currently the project uses HTML, CSS, JavaScript and JQuery. Drawing is made possible by using a HTML5 Canvas and the data is sent to the back-end using an AJAX POST request.
@@ -18,3 +15,7 @@
 ## To launch
 * Install all requirements (Flask, Tensorflow...)
 * Run app.py
+
+## Notes
+* Extra contains two scripts, one to train a model using the MNIST dataset and one to evaluate the model using the MNIST testing dataset.
+* The images folder will contain user images, both original and processed.
