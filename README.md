@@ -12,7 +12,7 @@
 ## Back-end
 
 * Implementation: Currently the project uses Flask to handle the requests, however I'm considering switching to [Vibora](https://github.com/vibora-io/vibora), as it seems promising and it is enough for a project of this scale. The neural network uses [Tensorflow](https://www.tensorflow.org/). 
-* The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to fit the images to match the MNIST dataset features.
+* The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to  match the MNIST dataset features for better accuracy.
 
 ## To launch
 * Install all requirements (Flask, Tensorflow...)
