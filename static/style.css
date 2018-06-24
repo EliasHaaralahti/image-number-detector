@@ -1,0 +1,58 @@
+body {
+	background: #FFFFE0;
+}
+
+canvas {
+	background: white;
+	border: black 1px solid;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #d3d3d3;
+	font-size: small;
+	text-align: center;
+	font-weight: italic;
+}
+
+#result {
+	font-weight: bold;
+}
+
+#clearCanvas {
+	background-color: red;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+	margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
+#submitCanvas {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.center {
+	text-align: center;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+}
+
