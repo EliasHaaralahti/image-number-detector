@@ -3,8 +3,13 @@ from PIL import Image
 import numpy as np
 import base64
 import re
-import cStringIO
 import time
+
+# Comment one of the imports below
+# PYTHON2 IMPORT
+#import cStringIO
+# PYTHON3 IMPORT
+from io import BytesIO, StringIO
 
 from src.detect_image_number import detect_image_number
 from src.preprocess import process_image
@@ -24,10 +29,16 @@ def index():
 def result():
     image_b64 = request.values['imageBase64']
     # Remove pattern from the data and decode from base64
-    image_data = re.sub('^data:image/.+;base64,', '',
-                            image_b64).decode('base64')
-    image_PIL = Image.open(cStringIO.StringIO(image_data))
-
+    # Python2 way
+    #image_data = re.sub('^data:image/.+;base64,', '', image_b64).decode('base64')
+    # Python3 way
+    base64data = re.sub('^data:image/.+;base64,', '', image_b64)
+    image_data = base64.b64decode(base64data)
+    # Python2
+    #image_PIL = Image.open(cStringIO.StringIO(image_data))
+    # Python3
+    image_PIL = Image.open(BytesIO(image_data))
+    
     filename = generateFileName()
     filepath = 'images/'
     image_PIL.save(filepath + filename)

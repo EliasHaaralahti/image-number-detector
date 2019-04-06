@@ -1,8 +1,10 @@
-# Image Number Detector (In development)
+# Image Number Detector 
 
-#### Image Number Detector is a web-application that uses a convolutional neural network to detect numbers drawn by the users.
+##### Currently adding instructions and porting to Python3. More instructions will be added shortly.
 
 ##### I'm looking into acquiring a server to host this application, hopefully a link should be here soon.
+
+#### Image Number Detector is a web-application that uses a convolutional neural network to detect numbers drawn by the users.
 
 ## Front-end
 
@@ -17,6 +19,7 @@
 ## To launch
 * Install all requirements (Flask, Tensorflow...)
 * Run app.py
+* More detailed instructions will be added soon...
 
 ## Notes
 * Extra contains two scripts, one to train a model using the MNIST dataset and one to evaluate the model using the MNIST testing dataset.
