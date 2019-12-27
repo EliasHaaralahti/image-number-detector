@@ -1,25 +1,22 @@
 # Image Number Detector 
 
-##### Currently adding instructions and porting to Python3. More instructions will be added shortly.
-
-##### I'm looking into acquiring a server to host this application, hopefully a link should be here soon.
-
 #### Image Number Detector is a web-application that uses a convolutional neural network to detect numbers drawn by the users.
 
 ## Front-end
 
-* Implementation: Currently the project uses HTML, CSS, JavaScript and JQuery. Drawing is made possible by using a HTML5 Canvas and the data is sent to the back-end using an AJAX POST request.
-* In the future, I will considering using a framework, such as React.
+* Implementation: Currently the project uses HTML, CSS, JavaScript and JQuery.
 
 ## Back-end
 
-* Implementation: Currently the project uses Flask to handle the requests, however I'm considering switching to [Vibora](https://github.com/vibora-io/vibora), as it seems promising and it is enough for a project of this scale. The neural network uses [Tensorflow](https://www.tensorflow.org/). 
-* The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to  match the MNIST dataset features for better accuracy.
+[Tensorflow](https://www.tensorflow.org/) used for deep learning. 
+* The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to match the MNIST dataset features for better accuracy.
 
 ## To launch
-* Install all requirements (Flask, Tensorflow...)
-* Run app.py
-* More detailed instructions will be added soon...
+* Create a new virtual environment (python3 -m venv venv).
+* Activate the environment (source venv/bin/activate)
+* Install all requirements (pip3 install -r requirements.txt)
+* Run (python3 app.py)
+* Go to localhost:5000
 
 ## Notes
 * Extra contains two scripts, one to train a model using the MNIST dataset and one to evaluate the model using the MNIST testing dataset.
