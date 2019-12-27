@@ -1,4 +1,5 @@
 $('.loader').hide();
+$('#percentages-table').hide();
 
 context = document.getElementById('canvas').getContext("2d");
 
@@ -56,7 +57,17 @@ function setResult(result) {
 	if (result == "") {
 		$('#result').text("");
 	} else {
-		$('#result').text("The number appears to be: " + result);
+		// TODO: Do something with results.raw 
+		// (contains 10 values that are percentages 
+		// of prediction)
+		$('#result').text("The number appears to be: " + result.prediction);
+
+		for (let i = 0; i < 10; i++) {
+			const probability = (parseFloat(result.raw[i]) * 100).toFixed(2);
+			$('#' + i).text( probability + "%" );
+		}
+
+		$('#percentages-table').show();
 	}
 }
 

@@ -53,7 +53,9 @@ def result():
 
     # Detect number
     result = detect_image_number(processed_image)
-    return result;
+    print("result")
+    print(result)
+    return result
 
 if __name__ == "__main__":
     app.run()
