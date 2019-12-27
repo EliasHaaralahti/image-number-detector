@@ -16,6 +16,8 @@
 * The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to match the MNIST dataset features for better accuracy.
 
 ## To launch
+* git clone https://github.com/EliasHaaralahti/image-number-detector.git
+* CD in to the project folder.
 * Create a new virtual environment (python3 -m venv venv).
 * Activate the environment (source venv/bin/activate)
 * Install all requirements (pip3 install -r requirements.txt)
