@@ -2,6 +2,10 @@
 
 #### Image Number Detector is a web-application that uses a convolutional neural network to detect numbers drawn by the users.
 
+## General / TODO:
+- The network needs to be trained more. While it does guess the number most of the time, the probabilities aren't very high.
+- If the probability isn't high, don't display guess?
+
 ## Front-end
 
 * Implementation: Currently the project uses HTML, CSS, JavaScript and JQuery.
