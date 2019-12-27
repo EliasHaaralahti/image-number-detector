@@ -36,12 +36,12 @@ def network():
 	h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2)
 	h_pool2 = max_pool_2x2(h_conv2)
 
-	# 3 layer
+	# 3 layer (softmax)
 	W_fc1 = weight_variable([7 * 7 * 64, 1024])
 	b_fc1 = bias_variable([1024])
 
 	h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
-	h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
+	h_fc1 = tf.nn.softmax(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
 
 	# Droupout
 	keep_prob = tf.placeholder(tf.float32)
