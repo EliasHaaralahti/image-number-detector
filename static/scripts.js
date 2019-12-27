@@ -51,6 +51,7 @@ $('#clearCanvas').mousedown( function(e) {
 	context.clearRect(0, 0, context.canvas.width,
 				context.canvas.height);
 	setResult("");
+	$('#percentages-table').hide();
 });
 
 function setResult(result) {
