@@ -5,6 +5,7 @@
 ## General / TODO:
 - The network needs to be trained more. While it does guess the number most of the time, the probabilities aren't very high.
 - If the probability isn't high, don't display guess?
+- Add steps to train the network.
 
 ## Front-end
 
@@ -16,8 +17,8 @@
 * The image data is preprocessed for the neural network, which was trained and tested using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). The idea of preprocessing is to match the MNIST dataset features for better accuracy.
 
 ## To launch
-* git clone https://github.com/EliasHaaralahti/image-number-detector.git
-* CD in to the project folder.
+* Clone the repository (git clone https://github.com/EliasHaaralahti/image-number-detector.git)
+* Move into the project directory. (cd image-number-detector/)
 * Create a new virtual environment (python3 -m venv venv).
 * Activate the environment (source venv/bin/activate)
 * Install all requirements (pip3 install -r requirements.txt)
